@@ -1,0 +1,76 @@
+:root{
+    --col:989b9a;
+}
+body{
+    margin: 0%;
+    
+}
+main{
+    display: grid;
+    grid-template-rows: 40fr 159fr;
+    position: relative;
+    height: 100%;
+}
+#globalscreen{ 
+    background-color: #71d6bb;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+#screen{
+    font-size: 45px;
+    background-color: #71d6bb;
+    border: 0px;
+    overflow-x: scroll;
+}
+#screenresult{
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 60px;
+}
+#buttons{
+    position: relative;
+}
+#buttons{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+.calcbuttons{
+    font-size: 40px;
+    background-color: #a3a3a3;
+    color: snow;
+    border: #aeb2b2 solid 1px;
+    width: 100px;
+    height: 50px;
+}
+.calcbuttons:active{
+    background-color: #616161;
+}
+#numbers{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+
+}
+.arkam{
+    width: 100%;
+    height: 100%;
+}
+#operation{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.amaliat{
+    width: 100%;
+    height: 100%;
+}
+@media only screen and (max-width: 640px) {
+    #buttons{
+        grid-template-columns: 3fr 2fr;
+    }
+    .calcbuttons{
+        font-size: 30px;
+    }
+}
